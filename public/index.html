@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Drawing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<section class="container">
+		<div id="toolbar">
+			<h1>Options</h1>
+			<label for="stroke">Stroke Color</label>
+			<input id="stroke" name='stroke' type="color" hidden>
+			<div id="color-button-container">
+				<input id="red-button" class="color-btn" name='stroke' type="button">
+				<input id="orange-button" class="color-btn" name='stroke' type="button">
+				<input id="yellow-button" class="color-btn" name='stroke' type="button">
+				<input id="green-button" class="color-btn" name='stroke' type="button">
+				<input id="blue-button" class="color-btn" name='stroke' type="button">
+				<input id="indigo-button" class="color-btn" name='stroke' type="button">
+				<input id="violet-button" class="color-btn" name='stroke' type="button">
+			</div>
+			<div id="eraser">
+				<button id="eraser-button">Undo</button>
+			</div>
+			<label for="lineWidth">Line Width</label>
+			<input id="lineWidth" name='lineWidth' type="number" value="1" min="1" max="10">
+			<button id="clear">Clear</button>
+			<label for="mapSelection" class="btn">Change Map</label>
+			<select name="mapSelection" id="mapSelection">
+				<option value="placeholder" disabled>Select</option>
+				<option value="Bank">Bank</option>
+				<option value="Border">Border</option>
+				<option value="Chalet">Chalet</option>
+				<option value="CloseQuarter">Close Quarter</option>
+				<option value="Clubhouse">Clubhouse</option>
+				<option value="Coastline">Coastline</option>
+				<option value="Consulate">Consulate</option>
+				<option value="EmeraldPlains">Emerald Plains</option>
+				<option value="Favela">Favela</option>
+				<option value="Fortress">Fortress</option>
+				<option value="HerefordBase">Hereford Base</option>
+				<option value="House">House</option>
+				<option value="KafeDostoyevsky">Kafe Dostoyevsky</option>
+				<option value="Kanal">Kanal</option>
+				<option value="Lair">Lair</option>
+				<option value="NighthavenLabs">Nighthaven Labs</option>
+				<option value="Oregon">Oregon</option>
+				<option value="Outback">Outback</option>
+				<option value="PresidentialPlane">Presidential Plane</option>
+				<option value="Skyscraper">Skyscraper</option>
+				<option value="StadiumAlpha">Stadium Alpha</option>
+				<option value="StadiumBravo">Stadium Bravo</option>
+				<option value="ThemePark">Theme Park</option>
+				<option value="Tower">Tower</option>
+				<option value="Villa">Villa</option>
+				<option value="Yacht">Yacht</option>
+			</select>
+			<div id="tabs"></div>
+		</div>
+		<div id="tab-content-container"></div>
+	</section>
+	<script src="./index.js"></script>
+</body>
+</html>
